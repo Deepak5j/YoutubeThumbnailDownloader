@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/js.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body id="main">
+        <h1> Youtube thumbnails Downloader</h1>
+
+        <table>
+            <tr>
+                <td><input class="w3-input w3-border" placeholder="Enter Youtube Video URL" type="text" id="videoId" onpaste="cleanUp()" onchange="cleanUp()" ></td>
+                <td><button class="w3-btn w3-ripple w3-blue" onclick="app()" id="but"> Submit </button></td>
+                <td><button class="w3-btn w3-ripple w3-red" onclick="cleanUp()"> Clear </button></td>
+            </tr>
+        </table>
+        
+        <article id="thumbnails">
+        </article>
+
+        <style>
+            table {
+                margin-left: auto;
+                margin-right: auto;
+            } 
+            h1 {
+                text-align: center;
+            }
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #imgContainer {
+                display: table;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                margin-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #titleContainer {
+                text-align: center;
+                width: inherit;
+                padding: 10px 20px;
+            }
+        </style>
+    </body>
+</html>
