@@ -34,13 +34,13 @@ function app() {
     imgUrlHqDefault = vid + "/hqdefault.jpg"
     imgUrlMaxResDefault = vid +"/maxresdefault.jpg"
 
-    var img1 = img_create(imgUrl1, "auto thumb-1", "Thumbnail1")
-    var img2 = img_create(imgUrl2, "auto thumb-2", "Thumbnail2")
-    var img3 = img_create(imgUrl3, "auto thumb-3", "Thumbnail3")
+    var img1 = img_create(imgUrl1, "Auto Thumb-1", "Thumbnail1")
+    var img2 = img_create(imgUrl2, "Auto Thumb-2", "Thumbnail2")
+    var img3 = img_create(imgUrl3, "Auto Thumb-3", "Thumbnail3")
     var imgDefault = img_create(imgUrlDefault, "Default", "Default")
     var imgMqDefault = img_create(imgUrlMqDefault, "MQ Default", "MQ Default")
     var imgHqDefault = img_create(imgUrlHqDefault, "HQ Default", "HQ Default")
-    var imgMaxResDefault = img_create(imgUrlMaxResDefault, "Maxres Default", "Maxres Default")
+    var imgMaxResDefault = img_create(imgUrlMaxResDefault, "MaxRes Default", "MaxRes Default")
    
     var imgUrlsElements = [imgMaxResDefault, imgHqDefault, imgMqDefault, imgDefault, img3, img2, img1]; 
 
