@@ -40,26 +40,20 @@ function app() {
     var imgMqDefault = img_create(imgUrlMqDefault, "MQ Default", "MQ Default")
     var imgHqDefault = img_create(imgUrlHqDefault, "HQ Default", "HQ Default")
     var imgMaxResDefault = img_create(imgUrlMaxResDefault, "MaxRes Default", "MaxRes Default")
-   
     var imgUrlsElements = [imgMaxResDefault, imgHqDefault, imgMqDefault, imgDefault, img3, img2, img1]; 
 
     for(var i=0; i<imgUrlsElements.length; i++) {
         var imgContainer = document.createElement("div");
         imgContainer.id = "imgContainer";
-
         var link = document.createElement("a");
         link.href = imgUrlsElements[i].src;
         link.download =  imgUrlsElements[i].title + ".jpg";
         link.appendChild(imgUrlsElements[i]);
-
         imgContainer.appendChild(link);
-
         var titleContainer = document.createElement("div");
         titleContainer.id = "titleContainer";
         titleContainer.innerHTML = "<p>" + imgUrlsElements[i].title+ "</p>"
         imgContainer.appendChild(titleContainer);        
-    
         document.getElementById("thumbnails").appendChild(imgContainer);  
     }
-    
 }
