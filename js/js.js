@@ -1,5 +1,4 @@
 function img_create(src, alt, title) {
-    //var img = IEWIN ? new Image() : document.createElement('img');
     var img = new Image();
     img.src = src;
     img.SameSite = "None";
