@@ -6,18 +6,10 @@ function img_create(src, alt, title) {
     if ( title != null ) img.title = title;
     return img;
 }
-
 function cleanUp() {
     document.getElementById("but").disabled = false;
     document.getElementById("thumbnails").innerHTML = "";  
 }
-
-function bringItOn() {
-    var cont = document.createElement("article");
-    cont.innerHTML = "<h1>:DDD</h1>";
-    
-}
-
 function app() {
     document.getElementById("but").disabled = true;
     var url = document.getElementById("videoId").value;
@@ -34,7 +26,6 @@ function app() {
         alert("Could not extract video ID. Possibly wrong URL.");
         return;
     }
-    
     imgUrl1 = vid + "/1.jpg";
     imgUrl2 = vid +"/2.jpg"
     imgUrl3 = vid +"/3.jpg"
@@ -42,7 +33,6 @@ function app() {
     imgUrlMqDefault = vid + "/mqdefault.jpg"
     imgUrlHqDefault = vid + "/hqdefault.jpg"
     imgUrlMaxResDefault = vid +"/maxresdefault.jpg"
-
     var img1 = img_create(imgUrl1, "Auto Thumb-1", "Thumbnail1")
     var img2 = img_create(imgUrl2, "Auto Thumb-2", "Thumbnail2")
     var img3 = img_create(imgUrl3, "Auto Thumb-3", "Thumbnail3")
@@ -51,7 +41,6 @@ function app() {
     var imgHqDefault = img_create(imgUrlHqDefault, "HQ Default", "HQ Default")
     var imgMaxResDefault = img_create(imgUrlMaxResDefault, "MaxRes Default", "MaxRes Default")
     var imgUrlsElements = [imgMaxResDefault, imgHqDefault, imgMqDefault, imgDefault, img3, img2, img1]; 
-
     for(var i=0; i<imgUrlsElements.length; i++) {
         var imgContainer = document.createElement("div");
         imgContainer.id = "imgContainer";
