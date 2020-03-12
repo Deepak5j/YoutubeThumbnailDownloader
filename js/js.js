@@ -15,21 +15,7 @@ function cleanUp() {
 function bringItOn() {
     var cont = document.createElement("article");
     cont.innerHTML = "<h1>:DDD</h1>";
-    var l1 = document.createElement("script");
-    l1.async = "true";
-    l1.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-    /*YoutubeThumbnailDownloaderHorizontalAd-2*/
-    var l2 = document.createElement("ins");
-    l2.setAttribute("class", "adsbygoogle");
-    l2.setAttribute("style", "display:block");
-    l2.setAttribute("data-ad-client", "ca-pub-7589017359598217");
-    l2.setAttribute("data-ad-slot", "5447137061");
-    l2.setAttribute("data-ad-format", "auto");
-    l2.setAttribute("data-full-width-responsive", "true");
-    var l3 = document.createElement("script");
-    l3.innerHTML = "(adsbygoogle = window.adsbygoogle || []).push({});";
-    cont.innerHTML += l1 + l2 + l3;
-    alert(22);
+    
 }
 
 function app() {
