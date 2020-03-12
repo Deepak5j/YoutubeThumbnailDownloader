@@ -21,13 +21,17 @@ function bringItOn() {
 function app() {
     document.getElementById("but").disabled = true;
     var url = document.getElementById("videoId").value;
+    if(!url) {
+        alert("Enter URL first then submit.");
+        return;
+    }
     var vid = "";
     var reg = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var match = url.match(reg);
     if ( match && match[7].length == 11 ){
         vid = "https://img.youtube.com/vi/" + match[7];
     } else{
-        alert("Could not extract video ID. Possibly wrong url");
+        alert("Could not extract video ID. Possibly wrong URL.");
         return;
     }
     
