@@ -14,7 +14,7 @@ function cleanUp() {
 
 function bringItOn() {
     var cont = document.createElement("article");
-    cont.innerHTML = ":DDD";
+    cont.innerHTML = "<h1>:DDD</h1>";
     var l1 = document.createElement("script");
     l1.async = "true";
     l1.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
