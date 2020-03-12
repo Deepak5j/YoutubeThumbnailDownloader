@@ -29,6 +29,7 @@ function bringItOn() {
     var l3 = document.createElement("script");
     l3.innerHTML = "(adsbygoogle = window.adsbygoogle || []).push({});";
     cont.innerHTML += l1 + l2 + l3;
+    alert(22);
 }
 
 function app() {
