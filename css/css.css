@@ -31,3 +31,20 @@ img {
     margin-right: auto;
     text-align: center;
 }
+footer {
+    background-color: #000;
+    position: abaolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}/*
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px;
+    padding: 25px;
+}*/
