@@ -56,4 +56,4 @@ function app() {
         document.getElementById("thumbnails").appendChild(imgContainer);  
     }
 }
-// :D Completed 
+// :D Completed  
